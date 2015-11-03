@@ -113,6 +113,7 @@ TARGET_RELEASE_CPPFLAGS += -DNEEDS_LGE_RIL_SYMBOLS
 
 # SELinux policies
 include device/qcom/sepolicy/sepolicy.mk
+include vendor/cm/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
     device/lge/g2-common/sepolicy
