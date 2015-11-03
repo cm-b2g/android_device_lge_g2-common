@@ -118,8 +118,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.ar.hal=e
 
 # USB
+# for Gecko to support mass storage
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp \
+    persist.sys.usb.config=mass_storage \
     persist.sys.isUsbOtgEnabled=true
 
 # Wifi
