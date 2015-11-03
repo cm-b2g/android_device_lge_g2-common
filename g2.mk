@@ -48,6 +48,10 @@ PRODUCT_COPY_FILES += \
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# for Gecko to support virtual home button
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.moz.has_home_button=0
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
