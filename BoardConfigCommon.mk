@@ -118,6 +118,29 @@ include vendor/cm/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
     device/lge/g2-common/sepolicy
 
+BOARD_SEPOLICY_UNION += \
+    bluetooth.te \
+    clatd.te \
+    file.te \
+    file_contexts \
+    genfs_contexts \
+    init_shell.te \
+    kernel.te \
+    mediaserver.te \
+    mm-qcamerad.te \
+    mpdecision.te \
+    netd.te \
+    platform_app.te \
+    property.te \
+    property_contexts \
+    qseecomd.te \
+    radio.te \
+    rmt_storage.te \
+    sensors.te \
+    system_server.te \
+    thermal-engine.te \
+    wpa.te
+
 # Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
