@@ -94,7 +94,6 @@ TARGET_POWERHAL_VARIANT := qcom
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
-BOARD_USES_QC_TIME_SERVICES := true
 
 # Recovery
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
@@ -137,8 +136,12 @@ BOARD_SEPOLICY_UNION += \
     radio.te \
     rmt_storage.te \
     sensors.te \
+    service.te \
+    service_contexts \
+    system_app.te
     system_server.te \
     thermal-engine.te \
+    timekeep.te \
     wpa.te
 
 # Wi-Fi

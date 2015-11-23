@@ -61,6 +61,15 @@ PRODUCT_PACKAGES += \
 
 EXPORT_DEVICE_PREFS := device/lge/g2-common/prefs
 
+#OSS Time solution
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep \
+
+PRODUCT_COPY_FILES += \
+    hardware/sony/timekeep/gecko/TimeKeepService.js:system/b2g/distribution/bundles/timekeep/TimeKeepService.js \
+    hardware/sony/timekeep/gecko/chrome.manifest:system/b2g/distribution/bundles/timekeep/chrome.manifest
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
