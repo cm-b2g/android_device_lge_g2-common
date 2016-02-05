@@ -57,6 +57,9 @@ DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf $DEVBASE/*
 
 extract ../../$VENDOR/$FAMILY/proprietary-files.txt $BASE
+# B2G HACK: make an extra copy in vendor/device because gonk
+# accepts only one directory for scanning blbos
+extract ../../$VENDOR/$FAMILY/proprietary-files.txt $DEVBASE
 extract ../../$VENDOR/$DEVICE/proprietary-files.txt $DEVBASE
 
 ./setup-makefiles.sh
